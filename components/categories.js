@@ -27,7 +27,7 @@ const Categories = ({activeCategory, handleChangeCategory}) => {
 
 const CategoriesItem =({title, index, isActive, handleChangeCategory}) => {
     let color = isActive ? theme.colors.white : theme.colors.neutral(0.8)
-    let backgroundColor = isActive ? theme.colors.neutral(0.8) : theme.colors.white
+    let backgroundColor = isActive ? '#1877F2' : theme.colors.white
     return(
         <Animated.View entering={FadeInRight.delay(index*200).duration(1000).springify().damping(14)}>
             <Pressable 

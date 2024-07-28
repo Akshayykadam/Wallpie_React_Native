@@ -19,7 +19,7 @@ const FiltersModel = ({
     onReset,
     setFilters,
     filters }) => {
-    const snapPoints = useMemo(() => ['75%'], []);
+    const snapPoints = useMemo(() => ['85%'], []);
 
     return (
         <BottomSheetModal
@@ -162,7 +162,7 @@ const styles = StyleSheet.create({
     },
     applyButton: {
         flex: 1,
-        backgroundColor: 'darkorange',
+        backgroundColor: '#1877F2',
         padding: 10,
         alignItems: 'center',
         justifyContent: 'center',

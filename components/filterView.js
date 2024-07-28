@@ -25,7 +25,7 @@ export const CommonView = ({ data, filters, filterName, setFilters }) => {
             {
                 data && data.map((item, index) => {
                     let isActive = filters && filters[filterName] == item;
-                    let backgroundColor = isActive ? theme.colors.neutral(0.7) : 'white';
+                    let backgroundColor = isActive ? '#1877F2' : 'white';
                     let color = isActive ? 'white' : theme.colors.neutral(0.7)
                     return (
                         <Pressable

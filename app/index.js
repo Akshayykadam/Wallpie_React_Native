@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
   },
   startButton:{
     marginBottom: 50,
-    backgroundColor:theme.colors.neutral(0.9),
+    backgroundColor:'#1877F2',
     padding: 15,
     paddingHorizontal: 90,
     borderRadius: theme.radius.xl,

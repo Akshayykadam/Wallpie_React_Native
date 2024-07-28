@@ -183,6 +183,13 @@ const HomeScreen = () => {
                 </Pressable>
             </View>
             <View>
+                {/* categories */}
+                <View style={styles.categories}>
+                    <Categories
+                        activeCategory={activeCategory}
+                        handleChangeCategory={handleChangeCategory}
+                    />
+                </View>
                 {/* Search bar */}
                 <View style={styles.searchBar}>
                     <View style={styles.searchIcon}>
@@ -202,13 +209,7 @@ const HomeScreen = () => {
                         )
                     }
                 </View>
-                {/* categories */}
-                <View style={styles.categories}>
-                    <Categories
-                        activeCategory={activeCategory}
-                        handleChangeCategory={handleChangeCategory}
-                    />
-                </View>
+                
             </View>
 
             {/* Main Home */}
@@ -242,7 +243,7 @@ const HomeScreen = () => {
                                                     )
                                                 }
                                                 <Pressable style={styles.filterCloseIcon} onPress={() => clearThisFilter(key)}>
-                                                    <Ionicons name="close" size={14} color={theme.colors.neutral(0.9)} />
+                                                    <Ionicons name="close" size={14} color={'white'} />
                                                 </Pressable>
                                             </View>
                                         )
@@ -329,7 +330,7 @@ const styles = StyleSheet.create({
         borderRadius: 50
     },
     categories: {
-        marginBottom: -20,
+        //marginBottom: -20,
         //marginTop: -15
     },
     headerIcon: {
@@ -364,7 +365,7 @@ const styles = StyleSheet.create({
         fontSize: hp(1.9)
     },
     filterCloseIcon: {
-        backgroundColor: theme.colors.neutral(0.1),
+        backgroundColor: '#1877F2',
         padding: 4,
         borderRadius: theme.radius.xs,
     }

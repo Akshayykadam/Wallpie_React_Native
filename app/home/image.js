@@ -33,6 +33,7 @@ const ImageScreen = () => {
             calculatedWidth = calculatedHeight * aspectRatio;
         }
 
+        // 
         return {
             width: calculatedWidth,
             height: calculatedHeight
@@ -214,7 +215,7 @@ const styles = StyleSheet.create({
         color: '#333',
         fontSize: 15,
         textAlign: 'center',
-    }
+    },
 })
 
 export default ImageScreen
